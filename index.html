@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bahria University — Home</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
+
+  <header class="site-header">
+    <div class="header-inner container">
+      <a href="#" class="brand" aria-label="Bahria University home">
+        <svg width="40" height="40" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <rect width="24" height="24" rx="4" fill="#0a66c2"></rect>
+          <text x="12" y="16" font-size="12" text-anchor="middle" fill="#fff" font-family="Arial">BU</text>
+        </svg>
+        <span class="brand-text">Bahria University</span>
+      </a>
+
+      <nav class="nav-bar" role="navigation" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#programs">Programs</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <label for="nav-toggle" class="nav-button" aria-hidden="true">
+        <span class="sr-only">Toggle menu</span>
+        <span class="hamburger"></span>
+      </label>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <ul>
+        <li><a href="#home" onclick="document.getElementById('nav-toggle').checked=false">Home</a></li>
+        <li><a href="#programs" onclick="document.getElementById('nav-toggle').checked=false">Programs</a></li>
+        <li><a href="#about" onclick="document.getElementById('nav-toggle').checked=false">About</a></li>
+        <li><a href="#news" onclick="document.getElementById('nav-toggle').checked=false">News</a></li>
+        <li><a href="#contact" onclick="document.getElementById('nav-toggle').checked=false">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="home" class="site-main container">
+    <section class="hero-section grid-hero" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <h1 id="hero-title">Bahria University — Learn. Discover. Lead.</h1>
+        <p class="lead">A modern responsive layout created for educational purposes using only HTML & CSS.</p>
+
+        <label for="apply-toggle" class="btn btn-primary">Apply Now</label>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <svg viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" class="hero-svg">
+          <defs>
+            <linearGradient id="g" x1="0" x2="1">
+              <stop offset="0" stop-color="#0a66c2" />
+              <stop offset="1" stop-color="#6ec1ff" />
+            </linearGradient>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#g)"></rect>
+          <g fill="#fff" opacity="0.12">
+            <circle cx="120" cy="100" r="60"></circle>
+            <rect x="260" y="40" width="220" height="160" rx="6"></rect>
+          </g>
+        </svg>
+      </div>
+    </section>
+
+    <section id="programs" class="section programs">
+      <h2 class="section-title">Programs</h2>
+      <div class="program-grid">
+        <article class="card">
+          <h3>Computer Science</h3>
+          <p>Study algorithms, operating systems, AI, and high-demand software skills.</p>
+          <a class="card-link" href="#">View program</a>
+        </article>
+
+        <article class="card">
+          <h3>Software Engineering</h3>
+          <p>Learn SDLC, project management, quality assurance, and large-scale systems.</p>
+          <a class="card-link" href="#">View program</a>
+        </article>
+
+        <article class="card">
+          <h3>Business Administration</h3>
+          <p>Become a business leader with management, finance, and entrepreneurship courses.</p>
+          <a class="card-link" href="#">View program</a>
+        </article>
+
+        <article class="card">
+          <h3>Cyber Security</h3>
+          <p>Practical training in network security, cryptography, and threat analysis.</p>
+          <a class="card-link" href="#">View program</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <h2 class="section-title">About Bahria University</h2>
+      <div class="about-grid">
+        <p>Bahria University is known for academic excellence, innovation and professional development. This webpage layout is created for Web Engineering Lab to replicate a real website using modern HTML and CSS concepts.</p>
+
+        <dl class="stats">
+          <div>
+            <dt>Students</dt>
+            <dd>15,000+</dd>
+          </div>
+          <div>
+            <dt>Programs</dt>
+            <dd>50+</dd>
+          </div>
+          <div>
+            <dt>Campuses</dt>
+            <dd>3</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section id="news" class="section news">
+      <h2 class="section-title">Latest News</h2>
+      <div class="news-grid">
+        <article class="news-card">
+          <h3>Admissions Open 2025</h3>
+          <p>Apply now for Spring and Fall sessions.</p>
+          <time datetime="2025-09-01">Sep 1, 2025</time>
+        </article>
+
+        <article class="news-card">
+          <h3>New Research Lab Launched</h3>
+          <p>Advanced computing lab inaugurated for CS & AI students.</p>
+          <time datetime="2025-08-15">Aug 15, 2025</time>
+        </article>
+
+        <article class="news-card">
+          <h3>Career Expo 2025</h3>
+          <p>Over 40 companies visited to hire students.</p>
+          <time datetime="2025-07-10">Jul 10, 2025</time>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2 class="section-title">Contact Bahria University</h2>
+      <form class="contact-form" action="#" method="post" novalidate>
+        <label>
+          <span class="label-text">Name</span>
+          <input type="text" name="name" required placeholder="Full name" />
+        </label>
+
+        <label>
+          <span class="label-text">Email</span>
+          <input type="email" name="email" required placeholder="you@example.com" />
+        </label>
+
+        <label>
+          <span class="label-text">Message</span>
+          <textarea name="message" rows="4" placeholder="Your message"></textarea>
+        </label>
+
+        <button type="submit" class="btn btn-secondary">Send message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Bahria University. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Accessibility</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <input type="checkbox" id="apply-toggle" class="apply-toggle" aria-hidden="true">
+  <div class="modal-backdrop" aria-hidden="true"></div>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-panel">
+      <label for="apply-toggle" class="modal-close" title="Close">✕</label>
+      <h2 id="modal-title">Application Form</h2>
+      <p>Please fill out the form to apply to Bahria University.</p>
+      <form action="#" class="modal-form" novalidate>
+        <label><span class="label-text">Full name</span><input type="text" required></label>
+        <label><span class="label-text">Email</span><input type="email" required></label>
+        <label><span class="label-text">Program of interest</span>
+          <select>
+            <option>Computer Science</option>
+            <option>Software Engineering</option>
+            <option>Business</option>
+            <option>Cyber Security</option>
+          </select>
+        </label>
+        <div class="modal-actions">
+          <button class="btn btn-primary" type="submit">Submit</button>
+          <label for="apply-toggle" class="btn btn-secondary" role="button">Close</label>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
